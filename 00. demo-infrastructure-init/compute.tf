@@ -27,7 +27,7 @@ resource "azurerm_storage_account" "stor" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_virtual_machine" "vm" {
+resource "azurerm_linux_virtual_machine" "vm" {
   name                  = "dev-vm-devops-tf-train"
   location                 = var.location
   resource_group_name      = var.resource_group_name
