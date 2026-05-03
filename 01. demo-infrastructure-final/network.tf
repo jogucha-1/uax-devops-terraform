@@ -49,7 +49,6 @@ resource "azurerm_public_ip" "pip" {
   location            = var.location
   resource_group_name = var.resource_group_name
   allocation_method   = "Static"
-  domain_name_label   = "uax-devops"
 }
 
 resource "azurerm_network_interface_security_group_association" "nsg_assoc" {
